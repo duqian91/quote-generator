@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/yeti/bootstrap.min.css" >
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.min.css" >
+
+    <style type="text/css">
+      body {
+        background-color: #FAFAFA;
+      }
+
+
+    </style>
 </head>
 <body>
-  <p>Quote: 
-    <div id="quote"></div>
-  </p>
-  <p>Author: 
-     <span id="author"></span>
-  </p>  
-  <button id="generate">Generate quote</button>
-  <a id="tweet" href="#" target="_blank">Tweet this quote</a>
+<div class="container">
+<h1>Random Quote Generator</h1>
+  <blockquote id="blockquote">
+    <p id="quote"></p>
 
+    <small id="author"></small>
+
+  </blockquote>
+
+  <button class="btn btn-success" id="generate">Generate quote</button>
+  <a id="tweet" class="zocial twitter" href="#" target="_blank">Tweet this quote</a>
+</div>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
   <script src="main.js"></script>
